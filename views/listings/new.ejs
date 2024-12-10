@@ -1,0 +1,64 @@
+<% layout('layouts/boilerplate') %>
+<body>
+  
+  <div class="row">
+    <div class="col-8 offset-2">
+      <br><br>
+      <h3>Enter Details:</h3>
+  <form action="/listings" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+    <div>
+      <label for="title" class="form-label">Enter Title</label>
+      <input type="text" name="listing[title]" placeholder="enter title" class="form-control " required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+  
+  <br>
+  
+  <div>
+    <label for="image" class="form-label">Choose Image File</label>
+    <input type="file" name="listing[image]" placeholder="Image URL" class="form-control" required>
+  </div>
+  
+  <br>
+  <div class="row ">
+    <div class="col-4">
+      <label for="price" class="form-label">Enter Price</label>
+      <input type="text" name="listing[price]" placeholder="enter price" class="form-control" required>
+      <div class="invalid-feedback"> Please Choose Number</div>
+    </div>
+    
+    <br>
+    <div class="col-8">
+      <label for="place" class="form-label">Enter Place</label>
+      <input type="text" name="listing[place]" placeholder="enter place" class="form-control" required>
+      <div class="invalid-feedback"> Please Choose place</div>
+    </div>
+    <br>
+  </div>
+  <div>
+    <label for="country" class="form-label">Enter Country</label>
+    <input type="text" name="listing[Country]" placeholder="enter country" class="form-control" required>
+    <div class="invalid-feedback"> please select country</div>
+  </div>
+  <br>
+<div>
+  <label for="description">Description</label>
+  <textarea type="text"
+    name="listing[description]"
+    placeholder="enter description" 
+     class="form-control" 
+     required pattern=".*\S.*" 
+     >
+  </textarea>
+  <div class="invalid-feedback"> Please note short Description</div>
+</div>
+  <br>
+  <button class="btn btn-dark add-btn">Add</button>
+  <br><br>
+</form>
+</div>
+</div>
+
+</body>
