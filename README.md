@@ -3,7 +3,7 @@ and manage listings , supporting user authentication and authorization ,file Upl
 
 Enivronmental Variables :
 CLOUD_NAME  || 
-|| CLOUD_API_KEY
+CLOUD_API_KEY
 || CLOUD_API_SECRET
 || ATLASDB_URL 
 || SECRET
